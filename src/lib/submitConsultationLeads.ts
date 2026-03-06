@@ -1,6 +1,6 @@
 export const submitConsultationLeads = async (formData: any) => {
   try {
-    const response = await fetch("http://localhost:5000/api/consultationLeads", {
+    const response = await fetch("http://adv-k0e2.onrender.com/api/consultationLeads", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
