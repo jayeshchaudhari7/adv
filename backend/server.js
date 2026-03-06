@@ -14,9 +14,6 @@ const consultationRoutes = require("./src/routes/consultationRoutes");
 app.use("/api/consultationLeads", consultationRoutes);
 const leadRoutes = require("./src/routes/leadRoutes");
 app.use("/api/leads", leadRoutes);
-app.get("/", (req, res) => {
-  res.send("API WORKING");
-});
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI)
